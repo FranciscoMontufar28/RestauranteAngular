@@ -1,5 +1,6 @@
 import { MenuService, Menu } from './services/menu.service';
 import { Component } from '@angular/core';
+import { finalize } from 'rxjs/operators';
 
 @Component({
   // La estiqueta para usar el compomente
@@ -16,9 +17,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   data: Menu[] = [];
+  loading  = false;
 
   constructor(service: MenuService) {
-    service.loadMenu().subscribe(x => this.data = x);
+    this.loading = true;
+    service.loadMenu()
+    .pipe(
+      finalize(() => this.loading = false)
+    )
+    .subscribe(x => this.data = x, err => console.log(err));
+  }
 
+  showName(menu: Menu) {
+    alert(menu.chef);
   }
 }

@@ -20,9 +20,12 @@ export class MenuService {
           {chef: 'Felipe', date: new Date(), img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1ObF-_9V_aXbZCOMH3n7U6VxR1CGFNIQXx5Dg0vUP0Ia1cXUVw'},
           // tslint:disable-next-line:max-line-length
           {chef: 'Jhovanny', date: new Date(), img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1ObF-_9V_aXbZCOMH3n7U6VxR1CGFNIQXx5Dg0vUP0Ia1cXUVw'},
-          {chef: 'Carolina', date: new Date(), img: ''},
-          {chef: 'Angie', date: new Date(), img: ''},
-          {chef: 'Lina', date: new Date(), img: ''},
+          // tslint:disable-next-line:max-line-length
+          {chef: 'Carolina', date: new Date(), img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1ObF-_9V_aXbZCOMH3n7U6VxR1CGFNIQXx5Dg0vUP0Ia1cXUVw'},
+          // tslint:disable-next-line:max-line-length
+          {chef: 'Angie', date: new Date(), img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1ObF-_9V_aXbZCOMH3n7U6VxR1CGFNIQXx5Dg0vUP0Ia1cXUVw'},
+          // tslint:disable-next-line:max-line-length
+          {chef: 'Lina', date: new Date(), img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1ObF-_9V_aXbZCOMH3n7U6VxR1CGFNIQXx5Dg0vUP0Ia1cXUVw'},
         ];
       })
     );
